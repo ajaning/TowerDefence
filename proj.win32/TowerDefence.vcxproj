@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}</ProjectGuid>
+    <ProjectName>TowerDefence</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath);</SourcePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes;$(ProjectDir)..\..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\..\scripting\lua\lua;$(ProjectDir)..\..\..\scripting\lua\tolua;$(ProjectDir)..\..\..\scripting\lua\src;$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\..\scripting\lua\tolua;$(ProjectDir)..\..\..\scripting\lua\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libCocosDenshion.lib;liblua.lib;lua51.lib;websockets.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>TowerDefence.h</HeaderFileName>
+      <InterfaceIdentifierFileName>TowerDefence_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TowerDefence_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/TowerDefence.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\..\..\scripting\lua\script" "$(ProjectDir)..\Resources" /e /Y</Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes;$(ProjectDir)..\..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\..\scripting\lua\lua;$(ProjectDir)..\..\..\scripting\lua\tolua;$(ProjectDir)..\..\..\scripting\lua\src;$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\..\scripting\lua\tolua;$(ProjectDir)..\..\..\scripting\lua\lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;libExtensions.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libCocosDenshion.lib;liblua.lib;lua51.lib;websockets.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>TowerDefence.h</HeaderFileName>
+      <InterfaceIdentifierFileName>TowerDefence_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TowerDefence_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/TowerDefence.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AdventureLevelClass.h" />
+    <ClInclude Include="..\Classes\AdventureModeMainClass.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AttackTowerClass.h" />
+    <ClInclude Include="..\Classes\BossModeClass.h" />
+    <ClInclude Include="..\Classes\CaratonProClass.h" />
+    <ClInclude Include="..\Classes\CommonClass.h" />
+    <ClInclude Include="..\Classes\comSpriteActionClass.h" />
+    <ClInclude Include="..\Classes\EnemySpriteClass.h" />
+    <ClInclude Include="..\Classes\FontShowClass.h" />
+    <ClInclude Include="..\Classes\gameADConClass.h" />
+    <ClInclude Include="..\Classes\GameAddEnemyClass.h" />
+    <ClInclude Include="..\Classes\gameADShowClass.h" />
+    <ClInclude Include="..\Classes\GameLogoRotateClass.h" />
+    <ClInclude Include="..\Classes\GameMainLevelClass.h" />
+    <ClInclude Include="..\Classes\GameMusicConClass.h" />
+    <ClInclude Include="..\Classes\GameMusicKey.h" />
+    <ClInclude Include="..\Classes\GameParam.h" />
+    <ClInclude Include="..\Classes\gameShopClass.h" />
+    <ClInclude Include="..\Classes\GameShowValidPos.h" />
+    <ClInclude Include="..\Classes\GameSpriteParm.h" />
+    <ClInclude Include="..\Classes\GameStageConClass.h" />
+    <ClInclude Include="..\Classes\GameStartLayerClass.h" />
+    <ClInclude Include="..\Classes\GameSubLevelSelClass.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\HelpLayerClass.h" />
+    <ClInclude Include="..\Classes\HelpPlayGame.h" />
+    <ClInclude Include="..\Classes\HUDClass.h" />
+    <ClInclude Include="..\Classes\LcdAdapClass.h" />
+    <ClInclude Include="..\Classes\MapPassClass.h" />
+    <ClInclude Include="..\Classes\MoneyScoreClass.h" />
+    <ClInclude Include="..\Classes\PetsBreedClass.h" />
+    <ClInclude Include="..\Classes\PetsDropClass.h" />
+    <ClInclude Include="..\Classes\PetsNestClass.h" />
+    <ClInclude Include="..\Classes\ScrollViewClass.h" />
+    <ClInclude Include="..\Classes\ShowTowerFeatureClass.h" />
+    <ClInclude Include="..\Classes\ShowWinLoseClass.h" />
+    <ClInclude Include="..\Classes\SkyLineDetailClass.h" />
+    <ClInclude Include="..\Classes\TowerAddTypeClass.h" />
+    <ClInclude Include="..\Classes\TowerBulletClass.h" />
+    <ClInclude Include="..\Classes\TowerBulletEffectClass.h" />
+    <ClInclude Include="..\Classes\TowerSelPadClass.h" />
+    <ClInclude Include="..\Classes\Util.h" />
+    <ClInclude Include="..\Classes\WayPointClass.h" />
+    <ClInclude Include="..\Classes\WelcomeLayerClass.h" />
+    <ClInclude Include="..\Classes\WhaleClass.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AdventureLevelClass.cpp" />
+    <ClCompile Include="..\Classes\AdventureModeMainClass.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\AttackTowerClass.cpp" />
+    <ClCompile Include="..\Classes\BossModeClass.cpp" />
+    <ClCompile Include="..\Classes\CaratonProClass.cpp" />
+    <ClCompile Include="..\Classes\CommonClass.cpp" />
+    <ClCompile Include="..\Classes\comSpriteActionClass.cpp" />
+    <ClCompile Include="..\Classes\EnemySpriteClass.cpp" />
+    <ClCompile Include="..\Classes\FontShowClass.cpp" />
+    <ClCompile Include="..\Classes\gameADConClass.cpp" />
+    <ClCompile Include="..\Classes\GameAddEnemyClass.cpp" />
+    <ClCompile Include="..\Classes\gameADShowClass.cpp" />
+    <ClCompile Include="..\Classes\GameLogoRotateClass.cpp" />
+    <ClCompile Include="..\Classes\GameMainLevelClass.cpp" />
+    <ClCompile Include="..\Classes\GameMusicConClass.cpp" />
+    <ClCompile Include="..\Classes\gameShopClass.cpp" />
+    <ClCompile Include="..\Classes\GameShowValidPos.cpp" />
+    <ClCompile Include="..\Classes\GameStageConClass.cpp" />
+    <ClCompile Include="..\Classes\GameStartLayerClass.cpp" />
+    <ClCompile Include="..\Classes\GameSubLevelSelClass.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\HelpLayerClass.cpp" />
+    <ClCompile Include="..\Classes\HelpPlayGame.cpp" />
+    <ClCompile Include="..\Classes\HUDClass.cpp" />
+    <ClCompile Include="..\Classes\LcdAdapClass.cpp" />
+    <ClCompile Include="..\Classes\MapPassClass.cpp" />
+    <ClCompile Include="..\Classes\MoneyScoreClass.cpp" />
+    <ClCompile Include="..\Classes\PetsBreedClass.cpp" />
+    <ClCompile Include="..\Classes\PetsDropClass.cpp" />
+    <ClCompile Include="..\Classes\PetsNestClass.cpp" />
+    <ClCompile Include="..\Classes\ScrollViewClass.cpp" />
+    <ClCompile Include="..\Classes\ShowTowerFeatureClass.cpp" />
+    <ClCompile Include="..\Classes\ShowWinLoseClass.cpp" />
+    <ClCompile Include="..\Classes\SkyLineDetailClass.cpp" />
+    <ClCompile Include="..\Classes\TowerAddTypeClass.cpp" />
+    <ClCompile Include="..\Classes\TowerBulletClass.cpp" />
+    <ClCompile Include="..\Classes\TowerBulletEffectClass.cpp" />
+    <ClCompile Include="..\Classes\TowerSelPadClass.cpp" />
+    <ClCompile Include="..\Classes\Util.cpp" />
+    <ClCompile Include="..\Classes\WayPointClass.cpp" />
+    <ClCompile Include="..\Classes\WelcomeLayerClass.cpp" />
+    <ClCompile Include="..\Classes\WhaleClass.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

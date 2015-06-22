@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userDefaultRoot>
+    <gameStageLasted>true</gameStageLasted>
+    <game_stage_LID>2</game_stage_LID>
+    <stage1_has>true</stage1_has>
+    <stage1_Locked>false</stage1_Locked>
+    <stage1_LLIndex>1</stage1_LLIndex>
+    <stage2_has>true</stage2_has>
+    <stage2_Locked>false</stage2_Locked>
+    <stage2_LLIndex>1</stage2_LLIndex>
+    <USER_BIGNEST_NUM>1</USER_BIGNEST_NUM>
+    <USER_MILK_NUM>4</USER_MILK_NUM>
+    <USER_COOKIE_NUM>37</USER_COOKIE_NUM>
+    <stage2_levle1_has>true</stage2_levle1_has>
+    <stage2_levle1_Locked>false</stage2_levle1_Locked>
+    <stage2_levle1_CLRALL>false</stage2_levle1_CLRALL>
+    <stage2_levle1_GAINED>3</stage2_levle1_GAINED>
+    <stage2_levle2_has>true</stage2_levle2_has>
+    <stage2_levle2_Locked>false</stage2_levle2_Locked>
+    <stage2_levle2_CLRALL>false</stage2_levle2_CLRALL>
+</userDefaultRoot>

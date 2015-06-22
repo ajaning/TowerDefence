@@ -1,0 +1,24 @@
+﻿生成启动时间为 2015/6/21 星期日 下午 6:30:27。
+     1>项目“D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\TowerDefence.vcxproj”在节点 2 上(Build 个目标)。
+     1>PreBuildEvent:
+         xcopy "D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script" "D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\Resources" /e /Y
+         :VCEnd
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\AudioEngine.lua
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\CCBReaderLoad.lua
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\Cocos2d.lua
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\CocoStudio.lua
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\extern.lua
+         D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\script\json.lua
+         复制了 6 个文件
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\Classes" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\cocos2dx_support" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\lua" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\tolua" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\src" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx\include" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx\platform\win32" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\external" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\CocosDenshion\include" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\cocos2dx_support" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\tolua" /I"D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\..\..\..\scripting\lua\lua" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AdventureLevelClass.cpp
+         AdventureLevelClass.cpp
+     1>d:\programfiles\cocos2d-x-2.2.6\projects\towerdefence\classes\adventurelevelclass.cpp(190): error C2059: 语法错误:“{”
+     1>d:\programfiles\cocos2d-x-2.2.6\projects\towerdefence\classes\adventurelevelclass.cpp(190): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>d:\programfiles\cocos2d-x-2.2.6\projects\towerdefence\classes\adventurelevelclass.cpp(190): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>d:\programfiles\cocos2d-x-2.2.6\projects\towerdefence\classes\adventurelevelclass.cpp(190): error C2143: 语法错误 : 缺少“;”(在“)”的前面)
+     1>已完成生成项目“D:\ProgramFiles\cocos2d-x-2.2.6\projects\TowerDefence\proj.win32\TowerDefence.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:21.51
